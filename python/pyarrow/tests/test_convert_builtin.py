@@ -467,8 +467,7 @@ def test_numpy_scalars_mixed_type():
 
 
 @pytest.mark.numpy
-@pytest.mark.xfail(reason="Type inference for uint64 not implemented",
-                   raises=OverflowError)
+
 def test_uint64_max_convert():
     data = [0, np.iinfo(np.uint64).max]
 
